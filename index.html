@@ -1,144 +1,164 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Grocery store</title>
 
-        <title>Grocery store</title>
+    <!--==Stylesheet===========================-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
-        <!--==Stylesheet===========================-->
-        <link rel="stylesheet"  type="text/css" href="style.css"/>
+    <!--==Fav-icon===========================-->
+    <link rel="shortcut icon" href="images/fav-icon.png" />
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
+      integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-        <!--==Fav-icon===========================-->
-        <link rel="shortcut icon" href="images/fav-icon.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <body>
+    <!--==Navigation===========================-->
+    <nav class="navigation">
+      <!--logo-------->
+      <a href="#" class="logo"> <span>gooding</span>Grocery </a>
 
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <!--menu-------->
+      <ul class="menu">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Our Packages</a></li>
+        <li><a href="#">Our App</a></li>
+      </ul>
 
+      <!--right-nav-(cart-like)-->
+      <div class="right-nav">
+        <!--like-------->
+        <a href="#" class="like">
+          <i class="fa-regular fa-heart"></i>
+          <span>0</span>
+        </a>
 
-    </head>
+        <!--cart-------->
+        <a href="#" class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>0</span>
+        </a>
+      </div>
+    </nav>
+    <!--nav-end--------------->
 
-    
-<body>
-  
+    <div class="wrapper">
+      <!--==search-banner--===========================-->
+      <section id="search-banner">
+        <!--bg---------->
 
-          <!--==Navigation===========================-->
-          <nav class="navigation">
-            <!--logo-------->
-            <a href="#" class="logo">
-             <span>gooding</span>Grocery
-            </a>
+        <img src="images/ba-2.jpg" class="ba-2" alt="ba-2" />
 
-            <!--menu-------->
-            <ul class="menu">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">Our Packages</a></li>
-                <li><a href="#">Our App</a></li>
-            </ul>
+        <!--text-------->
+        <div class="search-banner-text">
+          <h1>Order Your daily Groceries</h1>
+          <strong>#Free Delivery</strong>
 
-            <!--right-nav-(cart-like)-->
-            <div class="right-nav">
+          <!--search-box--------------->
+          <form action="" class="search-box">
+            <!--icon---------->
+            <i class="fas fa-search"></i>
+            <!--input---------->
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Search your daily groceries"
+              name="Search"
+              required
+            />
+            <!--btn---------->
+            <input type="submit" class="search-btn" value="Search" />
+          </form>
+        </div>
+      </section>
+      <!--search-banner-end-------->
 
-                 <!--like-------->
-                 <a href="#" class="like">
-                    <i class="fa-regular fa-heart"></i>
-                    <span>0</span>
-                 </a>
-
-                 <!--cart-------->
-                 <a href="#" class="cart">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span>0</span>
-                 </a>
-            </div>
-          </nav>
-          <!--nav-end--------------->
-
-
-<div class="wrapper">
-          <!--==search-banner--===========================-->
-          <section id="search-banner">
-
-            <!--bg---------->
-            
-            <img src="images/ba-2.jpg" class="ba-2" alt="ba-2">
-
-            <!--text-------->
-            <div class="search-banner-text">
-              <h1> Order Your daily Groceries</h1>
-              <strong>#Free Delivery</strong>
-
-              <!--search-box--------------->
-              <form action="" class="search-box">
-                <!--icon---------->
-                <i class="fas fa-search"></i>
-                <!--input---------->
-                <input type="text" class="search-input" placeholder="Search your daily groceries" name="Search"   required>
-                <!--btn---------->
-                <input type="submit" class="search-btn" value="Search">
-
-            
-
-              </form>
-
-            
-            </div>
-
-          </section>
-          <!--search-banner-end-------->
-
-
-
-
-
-          <!--==category======================================-->
-          <section id="category">
-            
-          <!--heading--------------->
-            <div class="category-heading">
-              <h2>Category</h2>
-            </div>
-         
-          
-            <!--box-container------------------------------------>
-          <div class="category-container">
-          
-          
-           
-            <a href="#" class="category-box">
-              <img src="images/fish1.jpg" alt="Fish">
-              <span>fish & Meat</span>
-            </a>
-            <a href="#" class="category-box">
-              <img src="images/fish1.jpg" alt="Fish">
-              <span>fish & Meat</span>
-            </a>
-            <!---->
-            <a href="#" class="category-box">
-              <img src="images/fish1.jpg" alt="Fish">
-              <span>fish & Meat</span>
-            </a>
-            <!------------->
-            <a href="#" class="category-box">
-              <img src="images/fish1.jpg" alt="Fish">
-              <span>fish & Meat</span>
-            </a>
-          </div>
-          </section>
-
+      <!--==category======================================-->
+      <section id="category">
+        <!--heading--------------->
+        <div class="category-heading">
+          <h2>Category</h2>
+          <span>All</span>
         </div>
 
-        </body>
-        </html>
+        <!--box-container------------------------------------>
+        <div class="category-container">
+          <a href="#" class="category-box">
+            <img src="images/fish1.jpg" alt="Fish" />
+            <span>Fish & Meat</span>
+          </a>
+          <a href="#" class="category-box">
+            <img src="images/Vegetables.png" alt="Vegetables" />
+            <span>Vegetables</span>
+          </a>
+          <!---->
+          <a href="#" class="category-box">
+            <img src="images/baby.png" alt="baby" />
+            <span>Baby</span>
+          </a>
+          <!------------->
+          <a href="#" class="category-box">
+            <img src="images/medicine.png" alt="medicine" />
+            <span>Medicine</span>
+          </a>
+          <!---->
+          <a href="#" class="category-box">
+            <img src="imageS/office.png" alt="office" />
+            <span>Office</span>
+          </a>
+          <!---->
+          <a href="#" class="category-box">
+            <img src="images/beauty.png" alt="beauty" />
+            <span>Beauty</span>
+          </a>
+          <!---->
+          <a href="#" class="category-box">
+            <img src="images/Gardening.png" alt="gardening" />
+            <span>Gardening</span>
+          </a>
+        </div>
+      </section>
+      <!--category-end------------------------>
 
+      <!--==Popular-product==================================-->
+      <section id="popular-product">
+        <!--heading------------------------>
+        <div class="product-heading">
+          <h3>Popular-product</h3>
+          <span>All</span>
+        </div>
+      </section>
+    </div>
 
-
-
-    
+    <!---product-box-container-->
+    <div class="product-container">
+      <!--box------------------------------->
+      <div class="product-box">
+        <img src="images/apple.png" alt="apple" />
+        <strong>Apple</strong>
+        <span class="quantity">1 KG</span>
+        <span class="price">₵6</span>
+        <!--cart-btn------------------------->
+        <a href="#" class="Cart-btn">
+          <i class="fa-solid fa-bag-shopping"></i> Add To Cart
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
